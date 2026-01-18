@@ -41,11 +41,7 @@ I integrated the **Reference Model** (Golden Model) directly into the **`scorebo
 ## ⚙️ How to Run
 1.  Compile all SystemVerilog files:
     ```bash
-    vlog -sv top.sv interface.sv design.sv environment.sv driver.sv monitor.sv scoreboard.sv generator.sv
-    ```
-2.  Simulate the top module:
-    ```bash
-    vsim johnson_counter_tb -do "run -all"
+    xrun -sv -access +rwc +gui top.sv interface.sv design.sv environment.sv driver.sv monitor.sv scoreboard.sv generator.sv 
     ```
 
 ## 📊 Sample Output
